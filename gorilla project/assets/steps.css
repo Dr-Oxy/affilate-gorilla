@@ -1,0 +1,157 @@
+html {
+  font-size: 16px;
+  box-sizing: border-box;
+  line-height: 1.4;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background: #fff;
+}
+
+.step-container {
+  margin: 1rem 0;
+}
+
+.step {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 2rem;
+  height: 2rem;
+  margin-left: 100px;
+  border-radius: 50%;
+
+  background: rgba(240, 247, 253, 1);
+  color: rgba(18, 31, 62, 1);
+
+  font-weight: 500;
+  font-size: 1.375rem;
+}
+
+.step::after,
+.step::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 60px;
+  height: 0.125rem;
+  background: rgba(239, 239, 239, 1);
+}
+
+.step::after {
+  right: 100%;
+}
+
+.step::before {
+  left: 100%;
+}
+
+.step:first-child {
+  margin-left: 0;
+}
+
+.step:first-child::after {
+  display: none;
+}
+
+.step:last-child::before {
+  display: none;
+  margin-left: 0;
+}
+
+.step.active,
+.step.done {
+  background: rgba(0, 117, 255, 1);
+  color: #fff;
+}
+
+.step.done::before,
+.step.done::after {
+  background: rgba(0, 117, 255, 1);
+}
+
+.step.active::before,
+.step.active::after {
+  background: rgba(0, 117, 255, 1);
+}
+
+@media screen and (min-width: 993px) {
+  .step {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 4.75rem;
+    height: 4.75rem;
+    margin-left: 350px;
+    border-radius: 50%;
+
+    background: rgba(240, 247, 253, 1);
+    color: rgba(18, 31, 62, 1);
+
+    font-weight: 500;
+    font-size: 1.375rem;
+  }
+
+  .step::after,
+  .step::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 250px;
+    height: 0.125rem;
+    background: rgba(239, 239, 239, 1);
+  }
+
+  .step::after {
+    right: 100%;
+  }
+
+  .step::before {
+    left: 100%;
+  }
+
+  .step:first-child {
+    margin-left: 0;
+  }
+
+  .step:first-child::after {
+    display: none;
+  }
+
+  .step:last-child::before {
+    display: none;
+    margin-left: 0;
+  }
+
+  .step.active,
+  .step.done {
+    background: rgba(0, 117, 255, 1);
+    color: #fff;
+  }
+
+  .step.done::before,
+  .step.done::after {
+    background: rgba(0, 117, 255, 1);
+  }
+
+  .step.active::before,
+  .step.active::after {
+    background: rgba(0, 117, 255, 1);
+  }
+}

@@ -1,0 +1,112 @@
+html {
+  font-size: 16px;
+  box-sizing: border-box;
+  line-height: 1.4;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Montserrat", sans-serif;
+  background-color: rgb(255, 255, 255);
+}
+
+.container {
+  border: 2px solid rgba(18, 31, 62, 0.1);
+  border-radius: 18px;
+}
+
+.svgArt {
+  position: absolute;
+  top: 4%;
+  right: 5%;
+}
+
+label {
+  color: rgba(18, 31, 62, 0.7);
+  font-size: 1.125rem;
+}
+
+input[type="email"],
+input[type="password"] {
+  background-color: rgba(240, 247, 253, 1);
+  color: rgba(18, 31, 62, 0.7);
+  border: none;
+  padding: 1.8rem;
+  margin-bottom: 3.5rem;
+}
+
+/* toggle switch styling */
+.toggle-switch {
+  appearance: none;
+  -webkit-appearance: none;
+  display: inline-block;
+  margin: 0;
+  position: relative;
+  width: 60px;
+  height: 25px;
+  background: rgba(240, 247, 253, 1);
+  border-radius: 1rem;
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.toggle-switch::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 4px;
+  transform: translate(0, -50%);
+  height: 24px;
+  width: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(27, 85, 226, 1);
+
+  border-radius: 50%;
+  transition: 0.2s ease-in-out;
+}
+
+.toggle-switch::after {
+  content: "";
+  display: inline-block;
+  font-size: 10px;
+  font-weight: 900;
+}
+
+.toggle-switch:checked {
+  background: #066cf2;
+}
+
+.toggle-switch:checked::after {
+  content: "";
+}
+
+.toggle-switch:checked::before {
+  transform: translate(30px, -50%);
+}
+
+/* submit button */
+button[type="submit"] {
+  background: rgba(0, 117, 255, 1);
+}
+
+.w-38 {
+  width: 38%;
+}
+
+p span {
+  color: rgba(0, 117, 255, 1);
+}
+
+.svgArt2 {
+  position: absolute;
+  bottom: 2%;
+  right: 4%;
+}

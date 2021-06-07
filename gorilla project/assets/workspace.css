@@ -1,0 +1,59 @@
+html {
+  font-size: 16px;
+  box-sizing: border-box;
+  line-height: 1.4;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background: #fff;
+}
+
+section {
+  margin-bottom: 70px;
+}
+
+ol {
+  display: flex;
+  justify-content: center;
+  text-transform: uppercase;
+  color: rgba(0, 117, 255, 1);
+  font-size: 1.125rem;
+}
+
+.form-wrapper {
+  border: 2px solid rgba(18, 31, 62, 0.1);
+}
+
+label {
+  font-size: 18px;
+  color: rgba(18, 31, 62, 0.7);
+}
+
+::placeholder {
+  color: rgba(0, 0, 0, 0.3) !important;
+  font-size: 18px !important;
+}
+
+input[type="text"] {
+  background: rgba(240, 247, 253, 1);
+  border: none;
+  font-size: 18px;
+  padding: 2rem;
+}
+
+.form-button button {
+  background: rgba(0, 117, 255, 1);
+  color: #fff;
+}

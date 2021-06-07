@@ -1,0 +1,49 @@
+html {
+  font-size: 16px;
+  box-sizing: border-box;
+  line-height: 1.4;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background: rgba(240, 247, 253, 1);
+}
+
+main {
+  background: rgba(240, 247, 253, 1);
+  height: 100vh;
+}
+
+.mid-profile-pic {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background: rgba(0, 117, 255, 1);
+}
+
+section.mid button {
+  background: rgba(0, 117, 255, 1);
+}
+
+.video {
+  background: rgba(0, 117, 255, 0.9);
+  height: 400px;
+}
+
+.visitor {
+  background: rgba(115, 103, 240, 0.12);
+}
+
+.leads {
+  background: rgba(40, 199, 111, 0.12);
+}
+
+.conversion {
+  background: rgba(234, 84, 85, 0.12);
+}

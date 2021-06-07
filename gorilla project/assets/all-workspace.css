@@ -1,0 +1,52 @@
+html {
+  font-size: 16px;
+  box-sizing: border-box;
+  line-height: 1.4;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background: rgba(240, 247, 253, 1);
+}
+
+main {
+  background: rgba(240, 247, 253, 1);
+}
+
+.lead-text {
+  width: 86%;
+  color: rgba(18, 31, 62, 0.5);
+  font-size: 1.5rem;
+  margin: 20px 0 50px;
+}
+
+.btn-cta {
+  color: rgba(255, 255, 255, 1) !important;
+  background: rgba(0, 117, 255, 1) !important;
+}
+
+.add-workspace,
+.workspace-1,
+.workspace-2 {
+  height: 260px;
+  min-width: 350px;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.add-workspace {
+  background: rgba(115, 103, 240, 0.12);
+}
+
+.workspace-1,
+.workspace-2 {
+  background: rgba(40, 199, 111, 0.12);
+}

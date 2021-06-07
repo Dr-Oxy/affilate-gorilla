@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>All Campaign</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
+
+    <!-- Author style -->
+    <link rel="stylesheet" href="./assets/nav(second).css" />
+    <link rel="stylesheet" href="./assets/all-campaign.css" />
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container-fluid">
+      <main class="py-5 px-3">
+        <section
+          class="
+            vert-nav
+            d-lg-flex
+            justify-content-lg-between
+            align-items-baseline
+          "
+        >
+          <div class="stars d-none d-lg-flex d-lg-block">
+            <img class="star1" src="./assets/img/stars.svg" alt="star" />
+            <img class="star2" src="./assets/img/stars.svg" alt="star" />
+            <img class="star3" src="./assets/img/stars.svg" alt="star" />
+            <img class="star4" src="./assets/img/stars.svg" alt="star" />
+            <img class="star5" src="./assets/img/stars.svg" alt="star" />
+          </div>
+
+          <div class="top-nav d-flex justify-content-between">
+            <div class="mr-sm-5">
+              <p>
+                Workspace
+                <img
+                  class="ml-sm-2"
+                  src="./assets/img/add(black).svg"
+                  alt="add icon"
+                />
+              </p>
+            </div>
+
+            <div class="d-none d-md-block">
+              <p>
+                <img
+                  class="mr-2"
+                  src="./assets/img/eng-flag.svg"
+                  alt="US Flag"
+                />
+                English
+              </p>
+            </div>
+
+            <div class="notif d-sm-block mx-sm-5">
+              <span class="badge badge-danger badge-pill">4</span>
+              <img src="./assets/img/bell.svg" alt="bell icon" />
+            </div>
+
+            <div class="user-Account d-flex">
+              <div class="profile-pic mr-3"></div>
+
+              <p class="d-none d-sm-block">Sunny Nwedena</p>
+
+              <div class="dropdown ml-sm-3">
+                <button
+                  class="btn dropCustom dropdown-toggle"
+                  type="button"
+                  id="dropdownMenuButton"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                ></button>
+                <div
+                  style="margin-left: -120px; margin-top: 1.2remx"
+                  class="dropdown-menu"
+                  aria-labelledby="dropdownMenuButton"
+                >
+                  <a class="dropdown-item" href="#">Bonuses</a>
+                  <a class="dropdown-item" href="#">Profile</a>
+                  <a class="dropdown-item" href="#">Sign Out</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="container-fluid">
+          <h3>All Campaign</h3>
+
+          <input
+            class="form-control-lg mt-4 border-0 w-lg-50 p-4"
+            type="search"
+            name="search-campaign"
+            id="search-campaign"
+            placeholder="search campaign"
+          />
+        </section>
+
+        <section class="campaign-list row">
+          <div class="card-wrap col-lg-4 mb-5">
+            <div class="card py-3 px-4 border-0">
+              <div class="dots bg-light mb-3 px-2 py-1">
+                <img class="mr-1" src="./assets/img/Ellipse 22.svg" alt="" />
+                <img class="mr-1" src="./assets/img/Ellipse 23.svg" alt="" />
+                <img src="./assets/img/Ellipse 24.svg" alt="" />
+              </div>
+
+              <img
+                src="./assets/img/product1"
+                class="card-img-top"
+                alt="product-pic"
+              />
+
+              <div class="line mt-4"></div>
+
+              <div class="card-body px-0">
+                <p class="card-text">Campaign Name:</p>
+
+                <p class="card-text">Created on:</p>
+
+                <p class="card-text">Last Edited:</p>
+              </div>
+
+              <div
+                class="
+                  card-body
+                  border-top border-secondary
+                  px-0
+                  d-flex
+                  justify-content-between
+                "
+              >
+                <button class="view-btn btn px-4 bg-success">
+                  <img src="./assets/img/view.svg" alt="" />
+                </button>
+
+                <button class="edit-btn px-4 bg-primary">
+                  <img src="./assets/img/write.svg" alt="" />
+                </button>
+                <button class="copy-btn btn px-4 bg-secondary">
+                  <img src="./assets/img/copy.svg" alt="" />
+                </button>
+                <button class="delete-btn btn px-4 bg-danger">
+                  <img src="./assets/img/delete.svg" alt="" />
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-wrap col-lg-4 mb-5">
+            <div class="card py-3 px-4 border-0">
+              <div class="dots bg-light mb-3 px-2 py-1">
+                <img class="mr-1" src="./assets/img/Ellipse 22.svg" alt="" />
+                <img class="mr-1" src="./assets/img/Ellipse 23.svg" alt="" />
+                <img src="./assets/img/Ellipse 24.svg" alt="" />
+              </div>
+
+              <img
+                src="./assets/img/product1"
+                class="card-img-top"
+                alt="product-pic"
+              />
+
+              <div class="line mt-4"></div>
+
+              <div class="card-body px-0">
+                <p class="card-text">Campaign Name:</p>
+
+                <p class="card-text">Created on:</p>
+
+                <p class="card-text">Last Edited:</p>
+              </div>
+
+              <div
+                class="
+                  card-body
+                  border-top border-secondary
+                  px-0
+                  d-flex
+                  justify-content-between
+                "
+              >
+                <button class="view-btn btn px-4 bg-success">
+                  <img src="./assets/img/view.svg" alt="" />
+                </button>
+
+                <button class="edit-btn px-4 bg-primary">
+                  <img src="./assets/img/write.svg" alt="" />
+                </button>
+                <button class="copy-btn btn px-4 bg-secondary">
+                  <img src="./assets/img/copy.svg" alt="" />
+                </button>
+                <button class="delete-btn btn px-4 bg-danger">
+                  <img src="./assets/img/delete.svg" alt="" />
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-wrap col-lg-4 mb-5">
+            <div class="card py-3 px-4 border-0">
+              <div class="dots bg-light mb-3 px-2 py-1">
+                <img class="mr-1" src="./assets/img/Ellipse 22.svg" alt="" />
+                <img class="mr-1" src="./assets/img/Ellipse 23.svg" alt="" />
+                <img src="./assets/img/Ellipse 24.svg" alt="" />
+              </div>
+
+              <img
+                src="./assets/img/product1"
+                class="card-img-top"
+                alt="product-pic"
+              />
+
+              <div class="line mt-4"></div>
+
+              <div class="card-body px-0">
+                <p class="card-text">Campaign Name:</p>
+
+                <p class="card-text">Created on:</p>
+
+                <p class="card-text">Last Edited:</p>
+              </div>
+
+              <div
+                class="
+                  card-body
+                  border-top border-secondary
+                  px-0
+                  d-flex
+                  justify-content-between
+                "
+              >
+                <button class="view-btn btn px-4 bg-success">
+                  <img src="./assets/img/view.svg" alt="" />
+                </button>
+
+                <button class="edit-btn px-4 bg-primary">
+                  <img src="./assets/img/write.svg" alt="" />
+                </button>
+                <button class="copy-btn btn px-4 bg-secondary">
+                  <img src="./assets/img/copy.svg" alt="" />
+                </button>
+                <button class="delete-btn btn px-4 bg-danger">
+                  <img src="./assets/img/delete.svg" alt="" />
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-wrap col-lg-4 mb-5">
+            <div class="card py-3 px-4 border-0" style="width: 22rem">
+              <div class="dots bg-light mb-3 px-2 py-1">
+                <img class="mr-1" src="./assets/img/Ellipse 22.svg" alt="" />
+                <img class="mr-1" src="./assets/img/Ellipse 23.svg" alt="" />
+                <img src="./assets/img/Ellipse 24.svg" alt="" />
+              </div>
+
+              <img
+                src="./assets/img/product1"
+                class="card-img-top"
+                alt="product-pic"
+              />
+
+              <div class="line mt-4"></div>
+
+              <div class="card-body px-0">
+                <p class="card-text">Campaign Name:</p>
+
+                <p class="card-text">Created on:</p>
+
+                <p class="card-text">Last Edited:</p>
+              </div>
+
+              <div
+                class="
+                  card-body
+                  border-top border-secondary
+                  px-0
+                  d-flex
+                  justify-content-between
+                "
+              >
+                <button class="view-btn btn px-4 bg-success">
+                  <img src="./assets/img/view.svg" alt="" />
+                </button>
+
+                <button class="edit-btn px-4 bg-primary">
+                  <img src="./assets/img/write.svg" alt="" />
+                </button>
+                <button class="copy-btn btn px-4 bg-secondary">
+                  <img src="./assets/img/copy.svg" alt="" />
+                </button>
+                <button class="delete-btn btn px-4 bg-danger">
+                  <img src="./assets/img/delete.svg" alt="" />
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-wrap col-lg-4 mb-5">
+            <div class="card py-3 px-4 border-0" style="width: 22rem">
+              <div class="dots bg-light mb-3 px-2 py-1">
+                <img class="mr-1" src="./assets/img/Ellipse 22.svg" alt="" />
+                <img class="mr-1" src="./assets/img/Ellipse 23.svg" alt="" />
+                <img src="./assets/img/Ellipse 24.svg" alt="" />
+              </div>
+
+              <img
+                src="./assets/img/product1"
+                class="card-img-top"
+                alt="product-pic"
+              />
+
+              <div class="line mt-4"></div>
+
+              <div class="card-body px-0">
+                <p class="card-text">Campaign Name:</p>
+
+                <p class="card-text">Created on:</p>
+
+                <p class="card-text">Last Edited:</p>
+              </div>
+
+              <div
+                class="
+                  card-body
+                  border-top border-secondary
+                  px-0
+                  d-flex
+                  justify-content-between
+                "
+              >
+                <button class="view-btn btn px-4 bg-success">
+                  <img src="./assets/img/view.svg" alt="" />
+                </button>
+
+                <button class="edit-btn px-4 bg-primary">
+                  <img src="./assets/img/write.svg" alt="" />
+                </button>
+                <button class="copy-btn btn px-4 bg-secondary">
+                  <img src="./assets/img/copy.svg" alt="" />
+                </button>
+                <button class="delete-btn btn px-4 bg-danger">
+                  <img src="./assets/img/delete.svg" alt="" />
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-wrap col-lg-4 mb-5">
+            <div class="card py-3 px-4 border-0" style="width: 22rem">
+              <div class="dots bg-light mb-3 px-2 py-1">
+                <img class="mr-1" src="./assets/img/Ellipse 22.svg" alt="" />
+                <img class="mr-1" src="./assets/img/Ellipse 23.svg" alt="" />
+                <img src="./assets/img/Ellipse 24.svg" alt="" />
+              </div>
+
+              <img
+                src="./assets/img/product1"
+                class="card-img-top"
+                alt="product-pic"
+              />
+
+              <div class="line mt-4"></div>
+
+              <div class="card-body px-0">
+                <p class="card-text">Campaign Name:</p>
+
+                <p class="card-text">Created on:</p>
+
+                <p class="card-text">Last Edited:</p>
+              </div>
+
+              <div
+                class="
+                  card-body
+                  border-top border-secondary
+                  px-0
+                  d-flex
+                  justify-content-between
+                "
+              >
+                <button class="view-btn btn px-4 bg-success">
+                  <img src="./assets/img/view.svg" alt="" />
+                </button>
+
+                <button class="edit-btn px-4 bg-primary">
+                  <img src="./assets/img/write.svg" alt="" />
+                </button>
+                <button class="copy-btn btn px-4 bg-secondary">
+                  <img src="./assets/img/copy.svg" alt="" />
+                </button>
+                <button class="delete-btn btn px-4 bg-danger">
+                  <img src="./assets/img/delete.svg" alt="" />
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+      integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

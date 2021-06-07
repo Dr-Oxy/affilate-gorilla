@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Funnel Asset Page</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
+
+    <!-- Author style -->
+    <link rel="stylesheet" href="./assets/nav(second).css" />
+    <link rel="stylesheet" href="./assets/funnel.css" />
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap"
+      rel="
+      stylesheet"
+    />
+  </head>
+  <body>
+    <div>
+      <main class="py-5 px-3 container-fluid">
+        <section
+          class="
+            vert-nav
+            d-lg-flex
+            justify-content-lg-between
+            align-items-baseline
+          "
+        >
+          <div class="stars d-none d-lg-flex d-lg-block">
+            <img class="star1" src="./assets/img/stars.svg" alt="star" />
+            <img class="star2" src="./assets/img/stars.svg" alt="star" />
+            <img class="star3" src="./assets/img/stars.svg" alt="star" />
+            <img class="star4" src="./assets/img/stars.svg" alt="star" />
+            <img class="star5" src="./assets/img/stars.svg" alt="star" />
+          </div>
+
+          <div class="top-nav d-flex justify-content-between">
+            <div class="mr-sm-5">
+              <p>
+                Workspace
+                <img
+                  class="ml-sm-2"
+                  src="./assets/img/add(black).svg"
+                  alt="add icon"
+                />
+              </p>
+            </div>
+
+            <div class="d-none d-md-block">
+              <p>
+                <img
+                  class="mr-2"
+                  src="./assets/img/eng-flag.svg"
+                  alt="US Flag"
+                />
+                English
+              </p>
+            </div>
+
+            <div class="notif d-sm-block mx-sm-5">
+              <span class="badge badge-danger badge-pill">4</span>
+              <img src="./assets/img/bell.svg" alt="bell icon" />
+            </div>
+
+            <div class="user-Account d-flex">
+              <div class="profile-pic mr-3"></div>
+
+              <p class="d-none d-sm-block">Sunny Nwedena</p>
+
+              <div class="dropdown ml-sm-3">
+                <button
+                  class="btn dropCustom dropdown-toggle"
+                  type="button"
+                  id="dropdownMenuButton"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                ></button>
+                <div
+                  style="margin-left: -120px; margin-top: 1.2remx"
+                  class="dropdown-menu"
+                  aria-labelledby="dropdownMenuButton"
+                >
+                  <a class="dropdown-item" href="#">Bonuses</a>
+                  <a class="dropdown-item" href="#">Profile</a>
+                  <a class="dropdown-item" href="#">Sign Out</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="row container-fluid mx-auto">
+          <div class="col-12 col-sm-12 col-md-12 col-lg-4 mb-3">
+            <div
+              class="
+                visitor
+                d-flex
+                flex-column
+                justify-content-center
+                align-items-center
+                rounded-lg
+                py-3
+              "
+            >
+              <p class="visitor-num">3</p>
+
+              <div class="d-flex align-items-center justify-content-center">
+                <img
+                  class="mr-4"
+                  src="./assets/img/add(blue).svg"
+                  alt="add icon"
+                />
+                <span>Visitors</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-12 col-md-12 col-lg-4 mb-3">
+            <div
+              class="
+                leads
+                d-flex
+                flex-column
+                justify-content-center
+                align-items-center
+                rounded-lg
+                py-3
+              "
+            >
+              <p class="leads-num">0</p>
+
+              <div class="d-flex align-items-baseline justify-content-center">
+                <img class="mr-4" src="./assets/img/bar.svg" alt="" />
+                <span>Leads</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-12 col-md-12 col-lg-4">
+            <div
+              class="
+                conversion
+                d-flex
+                flex-column
+                justify-content-center
+                align-items-center
+                rounded-lg
+                py-3
+              "
+            >
+              <p class="conversion-percent">10%</p>
+
+              <div class="d-flex align-items-center justify-content-center">
+                <img
+                  class="mr-4"
+                  src="./assets/img/rise-icon.svg"
+                  alt="chart icon"
+                />
+                <span>Conversion</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="container campaign-details bg-white py-5">
+          <div class="container mx-auto">
+            <div
+              class="p-0 d-lg-flex justify-content-between align-items-baseline"
+            >
+              <h3>Campaign Details</h3>
+
+              <button class="btn btn-lg bg-primary text-white p-3">
+                Edit Funnel
+              </button>
+            </div>
+
+            <div class="form-wrapper p-5 bg-white mt-5 rounded">
+              <form>
+                <div class="form-group mb-5">
+                  <label class="pl-4 mb-3" for="campaign-name"
+                    >Campaign Name</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control form-control-lg"
+                    id="addCampaignName"
+                    placeholder="Sunny Nweneda"
+                  />
+                </div>
+
+                <div class="form-group mb-5">
+                  <label class="pl-4 mb-3" for="bonus-page">Bonus Page</label>
+                  <input
+                    type="text"
+                    class="form-control form-control-lg"
+                    id="addAfLInk"
+                    placeholder="http://app.vidscriptohub.com/"
+                  />
+                </div>
+
+                <div class="form-group mb-5">
+                  <label class="pl-4 mb-3" for="opt-in">Opt In</label>
+                  <input
+                    type="text"
+                    class="form-control form-control-lg"
+                    id="addAfLInk"
+                    placeholder="http://app.vidscriptohub.com/"
+                  />
+                </div>
+
+                <div class="form-group mb-5">
+                  <label class="pl-4 mb-3" for="bonus-delivery"
+                    >Bonus Delivery</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control form-control-lg"
+                    id="addAfLInk"
+                    placeholder="http://app.vidscriptohub.com/"
+                  />
+                </div>
+              </form>
+            </div>
+          </div>
+        </section>
+
+        <section class="container promotion-assets bg-white py-5">
+          <div>
+            <div
+              class="
+                container
+                pb-4
+                d-lg-flex
+                justify-content-between
+                align-items-baseline
+              "
+            >
+              <h3>Promotion Assets</h3>
+
+              <div class="promotion-assets-btn">
+                <button class="btn bg-primary text-white p-3">
+                  Visit Jz Page
+                </button>
+                <button class="btn bg-primary text-white p-3 ml-lg-3">
+                  Get Affilate Link
+                </button>
+              </div>
+            </div>
+
+            <div class="border-top border-secondary pt-5">
+              <div
+                style="
+                  background: #ccc url(./assets/img/product1) no-repeat center
+                    center;
+                  background-size: cover;
+                "
+                class="promotion-product-img"
+              ></div>
+
+              <div class="promotion-product-description container">
+                <p class="mt-4">
+                  Sunny dummy text. Sunny dummy text. Sunny dot. About the
+                  product. About the product About theSunny dummy text. Sunny
+                  dummy text. Sunny dot.About the product. About the product
+                  About the Sunny dummy text. Sunny dummy text. Sunny dot. About
+                  the product. About the product About the
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="container email-template bg-white py-5">
+          <div
+            class="
+              email-sub-wrap
+              container
+              d-lg-flex
+              justify-content-between
+              align-items-center
+            "
+          >
+            <h3>Email Subject:</h3>
+
+            <button
+              class="
+                bg-primary
+                btn btn-lg
+                p-2
+                text-white
+                d-flex
+                align-items-center
+              "
+            >
+              Copy Subject
+              <img class="ml-3" src="./assets/img/copy.svg" alt="copy-icon" />
+            </button>
+          </div>
+
+          <div class="email-body-wrap">
+            <div
+              class="
+                container
+                d-lg-flex
+                justify-content-between
+                align-items-baseline
+              "
+            >
+              <h4>Email Body:</h4>
+
+              <button
+                class="
+                  btn btn-lg
+                  bg-primary
+                  text-white
+                  p-2
+                  d-flex
+                  align-items-center
+                "
+              >
+                Copy Body
+                <img class="ml-3" src="./assets/img/copy.svg" alt="copy-icon" />
+              </button>
+            </div>
+
+            <div class="email-body container mt-5">
+              <p>
+                Sunny dummy text. Sunny dummy text. Sunny dot.About the product.
+                About the product About the Sunny dummy text. Sunny dummy text.
+                Sunny dot About the product. About the product About theSunny
+                dummy text. Sunny dummy text. Sunny dot. About the product.
+                About the product About the
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="container email-leads bg-white py-5">
+          <div
+            class="
+              container
+              d-lg-flex
+              justify-content-between
+              align-items-center
+            "
+          >
+            <h3>Email Leads:</h3>
+
+            <button
+              class="
+                bg-primary
+                btn btn-lg
+                p-2
+                text-white
+                d-flex
+                align-items-center
+              "
+            >
+              Export Leads to CSV
+              <img
+                class="ml-3"
+                src="./assets/img/export icon 1.svg"
+                alt="copy-icon"
+              />
+            </button>
+          </div>
+
+          <table
+            id="example"
+            class="table table-striped table-bordered"
+            style="width: 100%"
+          >
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Position</th>
+                <th>Office</th>
+                <th>Age</th>
+                <th>Start date</th>
+                <th>Salary</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Tiger Nixon</td>
+                <td>System Architect</td>
+                <td>Edinburgh</td>
+                <td>61</td>
+                <td>2011/04/25</td>
+                <td>$320,800</td>
+              </tr>
+              <tr>
+                <td>Garrett Winters</td>
+                <td>Accountant</td>
+                <td>Tokyo</td>
+                <td>63</td>
+                <td>2011/07/25</td>
+                <td>$170,750</td>
+              </tr>
+
+              <tr>
+                <td>Zorita Serrano</td>
+                <td>Software Engineer</td>
+                <td>San Francisco</td>
+                <td>56</td>
+                <td>2012/06/01</td>
+                <td>$115,000</td>
+              </tr>
+              <tr>
+                <td>Jennifer Acosta</td>
+                <td>Junior Javascript Developer</td>
+                <td>Edinburgh</td>
+                <td>43</td>
+                <td>2013/02/01</td>
+                <td>$75,650</td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <th>Name</th>
+                <th>Position</th>
+                <th>Office</th>
+                <th>Age</th>
+                <th>Start date</th>
+                <th>Salary</th>
+              </tr>
+            </tfoot>
+          </table>
+        </section>
+      </main>
+    </div>
+
+    <!-- Bootstrap popper.js -->
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+      integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

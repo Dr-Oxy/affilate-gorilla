@@ -1,0 +1,89 @@
+html {
+  font-size: 16px;
+  box-sizing: border-box;
+  line-height: 1.4;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background: #fff;
+}
+
+main {
+  background-color: rgba(240, 247, 253, 1);
+}
+
+section {
+  margin-bottom: 70px;
+}
+
+.visitor {
+  background: rgba(115, 103, 240, 0.12);
+}
+
+.leads {
+  background: rgba(40, 199, 111, 0.12);
+}
+
+.conversion {
+  background: rgba(234, 84, 85, 0.12);
+}
+
+.visitor,
+.leads,
+.conversion {
+  font-size: 30px;
+  height: 260px;
+  color: rgba(94, 88, 115, 1);
+}
+
+.form-wrapper {
+  border: 2px solid rgba(18, 31, 62, 0.1);
+}
+
+label {
+  font-size: 18px;
+  color: rgba(18, 31, 62, 0.7);
+}
+
+::placeholder {
+  color: rgba(0, 0, 0, 0.3) !important;
+  font-size: 18px !important;
+}
+
+input[type="text"] {
+  background: rgba(240, 247, 253, 1);
+  border: none;
+  font-size: 18px;
+  padding: 2rem;
+}
+
+.promotion-product-img {
+  width: 726px;
+  height: 420px;
+  margin: auto;
+}
+
+.email-sub-wrap {
+  padding-bottom: 60px;
+}
+
+.email-body-wrap {
+  border-top: 2px rgba(239, 239, 239, 1) solid;
+  padding-top: 80px;
+}
+
+.email-body-wrap p {
+  font-size: 28px;
+}

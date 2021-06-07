@@ -1,0 +1,76 @@
+html {
+  font-size: 16px;
+  box-sizing: border-box;
+  line-height: 1.4;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.notif {
+  position: relative;
+}
+
+.notif span {
+  position: absolute;
+  bottom: 70%;
+  left: 25%;
+}
+
+.notif img {
+  min-height: 28px;
+  width: 20px;
+}
+
+.profile-pic {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background: rgb(255, 255, 255) url(./img/avatar.svg) no-repeat center center;
+}
+
+.dropCustom.dropdown-toggle {
+  background: none;
+  color: rgba(0, 117, 255, 1);
+  font-size: 20px;
+  margin-top: -8px;
+}
+
+@media screen and (min-width: 900px) and (max-width: 1155px) {
+  section.bottom {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 1.875rem;
+  }
+
+  .grid-left {
+    grid-column: 1/9;
+  }
+  .grid-right {
+    grid-column: 9/-1;
+  }
+}
+
+@media screen and (min-width: 1160px) {
+  section.vert-nav {
+    border-bottom: 2px rgba(239, 239, 239, 1) solid;
+  }
+  section.bottom {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 1.875rem;
+  }
+  .grid-left {
+    grid-column: 1/10;
+  }
+  .grid-right {
+    grid-column: 10/-1;
+  }
+}

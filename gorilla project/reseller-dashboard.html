@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reseller Dashboard</title>
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
+
+    <!-- Author style -->
+    <link rel="stylesheet" href="./assets/nav(second).css" />
+
+    <link rel="stylesheet" href="./assets/reseller.css" />
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container-fluid">
+      <main class="pt-5 pb-3 px-4">
+        <section
+          class="
+            vert-nav
+            d-lg-flex
+            justify-content-lg-between
+            align-items-baseline
+          "
+        >
+          <div class="stars d-none d-lg-flex d-lg-block">
+            <img class="star1" src="./assets/img/stars.svg" alt="star" />
+            <img class="star2" src="./assets/img/stars.svg" alt="star" />
+            <img class="star3" src="./assets/img/stars.svg" alt="star" />
+            <img class="star4" src="./assets/img/stars.svg" alt="star" />
+            <img class="star5" src="./assets/img/stars.svg" alt="star" />
+          </div>
+
+          <div class="top-nav d-flex justify-content-between">
+            <div class="mr-sm-5">
+              <p>
+                Workspace
+                <img
+                  class="ml-sm-2"
+                  src="./assets/img/add(black).svg"
+                  alt="add icon"
+                />
+              </p>
+            </div>
+
+            <div class="d-none d-md-block">
+              <p>
+                <img
+                  class="mr-2"
+                  src="./assets/img/eng-flag.svg"
+                  alt="US Flag"
+                />
+                English
+              </p>
+            </div>
+
+            <div class="notif d-sm-block mx-sm-5">
+              <span class="badge badge-danger badge-pill">4</span>
+              <img src="./assets/img/bell.svg" alt="bell icon" />
+            </div>
+
+            <div class="user-Account d-flex">
+              <div class="profile-pic mr-3"></div>
+
+              <p class="d-none d-sm-block">Sunny Nwedena</p>
+
+              <div class="dropdown ml-sm-3">
+                <button
+                  class="btn dropCustom dropdown-toggle"
+                  type="button"
+                  id="dropdownMenuButton"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                ></button>
+                <div
+                  style="margin-left: -120px; margin-top: 1.2remx"
+                  class="dropdown-menu"
+                  aria-labelledby="dropdownMenuButton"
+                >
+                  <a class="dropdown-item" href="#">Bonuses</a>
+                  <a class="dropdown-item" href="#">Profile</a>
+                  <a class="dropdown-item" href="#">Sign Out</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="intro">
+          <h1>Reseller Dashboard</h1>
+
+          <p class="w-50 mt-2 mb-5">
+            Affiliate Gorilla reseller addon lets you make money by reselling
+            access to the platform through your own customised dashboard
+          </p>
+
+          <div class="buttons">
+            <button class="btn btn-lg bg-primary mr-lg-2">
+              Marketing assets
+            </button>
+            <button class="btn btn-lg bg-success mr-lg-2">
+              Buy more assets
+            </button>
+            <button class="btn btn-lg bg-primary">Add user</button>
+          </div>
+        </section>
+
+        <section
+          style="background: rgba(115, 103, 240, 0.12)"
+          class="container-fluid p-lg-0 mx-auto d-flex justify-content-around"
+        >
+          <div class="box">
+            <p">Total license</p>
+
+            <div class="d-flex align-items-center">
+              <img src="./assets/img/add(blue).svg" alt="add icon" />
+              <span class="license-num ml-3">2</span>
+            </div>
+
+          </div>
+
+          <div class="line d-none d-lg-block"></div>
+
+            <div class="box">
+                <p>Total accounts</p>
+
+                <div class="d-flex align-items-center">
+                <img src="./assets/img/add(green).svg" alt="add icon" />
+                <span class="license-num ml-3">0</span>
+                </div>
+            </div>
+
+            <div class="line d-none d-lg-block"></div>
+      
+
+          <div class="box">
+            <p>License used</p>
+
+            <div class="d-flex align-items-center">
+              <img src="./assets/img/add(red).svg" alt="add icon" />
+              <span class="license-num ml-3">0</span>
+            </div>
+          </div>
+        </section>
+
+        <section class="container-fluid mx-auto bg-white p-4">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                    <th scope="col">Name</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Created Date</th>
+                    <th scope="col">Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                    <th scope="row">Test</th>
+                    <td>testuser@gmail.comt</td>
+                    <td>2012-05-05  05:28:53</td>
+                    <td class="d-flex justify-content-lg-around align-items-center"><span class="text-primary">Edit</span> <span class="text-danger">Delete</span></td>
+                    </tr>
+
+                    <tr>
+                    <th scope="row">Test</th>
+                    <td>testuser@gmail.comt</td>
+                    <td>2012-05-05  05:28:53</td>
+                  <td class="d-flex justify-content-lg-around align-items-center"><span class="text-primary">Edit</span> <span class="text-danger">Delete</span></td>
+                    </tr>
+
+                   <tr>
+                    <th scope="row">Test</th>
+                    <td>testuser@gmail.comt</td>
+                    <td>2012-05-05  05:28:53</td>
+                   <td class="d-flex justify-content-lg-around align-items-center"><span class="text-primary">Edit</span> <span class="text-danger">Delete</span></td>
+                    </tr>
+
+
+                   <tr>
+                    <th scope="row">Test</th>
+                    <td>testuser@gmail.comt</td>
+                    <td>2012-05-05  05:28:53</td>
+                   <td class="d-flex justify-content-lg-around align-items-center"><span class="text-primary">Edit</span> <span class="text-danger">Delete</span></td>
+                    </tr>
+
+
+                   <tr>
+                    <th scope="row">Test</th>
+                    <td>testuser@gmail.comt</td>
+                    <td>2012-05-05  05:28:53</td>
+                    <td class="d-flex justify-content-lg-around align-items-center"><span class="text-primary">Edit</span> <span class="text-danger">Delete</span></td>
+                    </tr>
+                </tbody>
+                </table>
+        </section>
+      </main>
+    </div>
+
+    <!-- Bootstrap popper.js -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+      integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

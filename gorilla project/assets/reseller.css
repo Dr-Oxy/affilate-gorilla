@@ -1,0 +1,77 @@
+html {
+  font-size: 16px;
+  box-sizing: border-box;
+  line-height: 1.4;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background: #fff;
+  color: rgba(94, 88, 115, 1);
+}
+
+main {
+  background: rgba(240, 247, 253, 1);
+}
+
+section {
+  margin-bottom: 70px;
+}
+
+.intro h1 {
+  font-size: 2.275rem;
+  font-weight: normal;
+}
+
+.intro p {
+  font-size: 1.32rem;
+  font-weight: 300;
+}
+
+.intro button {
+  text-transform: capitalize;
+  color: #fff;
+}
+
+/* main section:nth-child(3) {
+  display: flex;
+  justify-content: space-around;
+}
+
+.box {
+  padding: 30px 0;
+} */
+
+.box span {
+  font-size: 2.275rem;
+  color: rgba(94, 88, 115, 1);
+  font-weight: 500;
+}
+
+.box:nth-child(2) {
+  text-align: left;
+  background: #000;
+}
+
+.line {
+  height: 100px;
+  width: 2px;
+  background-color: rgba(18, 31, 62, 0.14);
+  align-self: center;
+}
+
+tbody tr {
+  height: 80px;
+  gap: 20px;
+}

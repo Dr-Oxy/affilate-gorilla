@@ -1,0 +1,39 @@
+html {
+  font-size: 16px;
+  box-sizing: border-box;
+  line-height: 1.4;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background: rgba(240, 247, 253, 1);
+}
+
+main {
+  background: rgba(240, 247, 253, 1);
+}
+
+section {
+  margin-bottom: 70px;
+}
+
+h3 {
+  color: rgba(0, 117, 255, 1);
+}
+
+.line {
+  height: 20px;
+  background: rgba(238, 244, 250, 1);
+}
+
+.card-body button {
+  border: none !important;
+}

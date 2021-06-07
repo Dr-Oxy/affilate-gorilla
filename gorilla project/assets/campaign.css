@@ -1,0 +1,155 @@
+html {
+  font-size: 16px;
+  box-sizing: border-box;
+  line-height: 1.4;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background: rgba(240, 247, 253, 1);
+}
+
+main {
+  background: rgba(240, 247, 253, 1);
+}
+
+section {
+  margin-bottom: 70px;
+}
+
+/* steps section */
+
+.step-container {
+  margin: 1rem 0;
+}
+
+.step {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 2rem;
+  height: 2rem;
+  margin-left: 100px;
+  border-radius: 50%;
+
+  background: rgba(240, 247, 253, 1);
+  color: rgba(18, 31, 62, 1);
+
+  font-weight: 500;
+  font-size: 1.375rem;
+}
+
+.step::after,
+.step::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 60px;
+  height: 0.125rem;
+  background: rgba(239, 239, 239, 1);
+}
+
+.step::after {
+  right: 100%;
+}
+
+.step::before {
+  left: 100%;
+}
+
+.step:first-child {
+  margin-left: 0;
+}
+
+.step:first-child::after {
+  display: none;
+}
+
+.step:last-child::before {
+  display: none;
+  margin-left: 0;
+}
+
+.step.active,
+.step.done {
+  background: rgba(0, 117, 255, 1);
+  color: #fff;
+}
+
+.step.done::before,
+.step.done::after {
+  background: rgba(0, 117, 255, 1);
+}
+
+.step.active::before,
+.step.active::after {
+  background: rgba(0, 117, 255, 1);
+}
+
+/* search section */
+.search-input {
+  width: 100%;
+}
+
+.search-input input {
+  width: 80%;
+  padding: 24px 20px;
+  background-color: rgba(240, 247, 253, 1);
+}
+
+.dropdown button {
+  color: rgba(18, 31, 62, 0.5);
+  background: rgba(240, 247, 253, 1);
+}
+
+.dropdown-menu,
+.search-input input {
+  color: rgba(18, 31, 62, 0.5);
+}
+
+/* product section */
+
+.product {
+  min-height: 286px;
+}
+
+.product-image {
+  height: 208px;
+  width: inherit;
+  background: #ddd url(./img/product1) no-repeat center;
+  background-size: cover;
+}
+
+.product-cta {
+  padding: 10px;
+  background: rgba(115, 103, 240, 0.1);
+}
+
+.btn-font-size {
+  font-size: 14px;
+  width: 180px !important;
+}
+
+@media screen and (min-width: 993px) {
+  .step {
+    width: 4.75rem;
+    height: 4.75rem;
+    margin-left: 350px;
+  }
+
+  .step::after,
+  .step::before {
+    width: 250px;
+    height: 0.125rem;
+  }
+}
